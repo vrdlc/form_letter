@@ -3,9 +3,9 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" href="js/jquery-1.12.0.js"></script>
-    <script type="text/javascript" href="bootstrap.js"></script>
-    <script type="text/javascript" href="scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Form Letter</title>
   </head>
@@ -16,29 +16,27 @@
         <form>
           <div class="form-group">
             <label for="name1">First Name</label>
-            <input type="name1" class="form-control" id="name1" placeholder="First Name">
+            <input type="text" class="form-control" id="name1" placeholder="First Name">
           </div>
           <div class="form-group">
             <label for="name2">Last Name</label>
-            <input type="name2" class="form-control" id="name2" placeholder="Last Name">
+            <input type="text" class="form-control" id="name2" placeholder="Last Name">
           </div>
 
-          <div class="form-group">
-            <label for="email1">Email Address</label>
-            <input type="email1" class="form-control" id="email1" placeholder="Email Address">
-          </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+
     </div>
 
-    <div class="container">
+
       <div id="letter">
-        <h5>Dear <span class="name1"><span> <span class="name2"></span>,</h5>
+        <p>Dear <span class="name1"></span> <span class="name2"></span>,</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <p> Sincerely, Santa Claus</p>
       </div>
-    </div>
+      </div>
+
   </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/scripts_orderform.js"></script>
+    <meta charset="utf-8">
+    <title>Order Form</title>
+  </head>
+  <body>
+
+
+
+<input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-default" />
+
+<div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Confirm Submit
+            </div>
+            <div class="modal-body">
+                Are you sure you want to submit the following details?
+
+                <!-- We display the details entered by the user here -->
+                <table class="table">
+                    <tr>
+                        <th>Last Name</th>
+                        <td id="lname"></td>
+                    </tr>
+                    <tr>
+                        <th>First Name</th>
+                        <td id="fname"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="#" id="submit" class="btn btn-success success">Submit</a>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -18,67 +18,68 @@
       </div>
 
 
-          <form>
-            <div class="form-group">
-              <label for="fullName">First Name            Last Name</label>
-              <input type="name" class="form-control" id="fullName" placeholder="First Name                                                    Last Name">
-            </div>
-
-            <div class="form-group">
-              <label for="streetAddress">Street Address</label>
-              <input type="streetaddress" class="form-control" id="streetAddress" placeholder="Street Address">
-            </div>
-
-
-            <div class="form-group">
-              <label for="cityStateZip">City, State, Zip Code</label>
-              <input type="citystatezip" class="form-control" id="cityStateZip" placeholder="City                         State                                      Zip">
-            </div>
-
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Email Address">
-            </div>
-
-
-
-          </form>
-
-
-    <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-default" />
-
-    <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    Confirm Submit
-                </div>
-                <div class="modal-body">
-                    Are you sure you want to submit the following details?
-
-                    <!-- We display the details entered by the user here -->
-                    <table class="table">
-                        <tr>
-                            <th>Last Name</th>
-                            <td id="lname"></td>
-                        </tr>
-                        <tr>
-                            <th>First Name</th>
-                            <td id="fname"></td>
-                        </tr>
-                    </table>
-
-                </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <a href="#" id="submit" class="btn btn-success success">Submit</a>
-            </div>
+      <form>
+        <div class="form-group">
+          <label for="fullName">First Name            Last Name</label>
+          <input type="name" class="form-control" id="fullName" placeholder="First Name                                                    Last Name">
         </div>
-    </div>
-    </div>
-  </div>
+
+        <div class="form-group">
+          <label for="streetAddress">Street Address</label>
+          <input type="streetaddress" class="form-control" id="streetAddress" placeholder="Street Address">
+        </div>
+
+        <div class="form-group">
+          <label for="cityStateZip">City, State, Zip Code</label>
+          <input type="citystatezip" class="form-control" id="cityStateZip" placeholder="City                         State                                      Zip">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Email Address">
+        </div>
+      </form>
+
+
+      <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-default" />
+
+      <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      Order Confirmed!
+                  </div>
+                  <div class="modal-body">
+                      Thank you <span class="fullName"></span>for your order of <strong>Four (4) pair, safety goggles</strong>. A confirmation has been emailed to you.
+                      <p></p>
+                      Please confirm your shipping address as:
+
+                      <table class="table">
+                          <tr>
+                              <th>Name</th>
+                              <td id="name"></td>
+                          </tr>
+                          <tr>
+                              <th>Address</th>
+                              <td id="address"></td>
+                          </tr>
+                          <tr>
+                              <th>City, State, Zip Code</th>
+                              <td id="cityState"></td>
+
+                          </tr>
+                      </table>
+
+                  </div>
+
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      <a href="#" id="submit" class="btn btn-success success">Submit</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
 
 

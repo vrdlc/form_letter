@@ -17,8 +17,11 @@ $(document).ready(function() {
 
   $('#submitBtn').click(function() {
        /* when the button in the form, display the entered values in the modal */
-       $('#lname').html($('#lastname').val());
-       $('#fname').html($('#firstname').val());
+       $('#name').html($('#fullName').val());
+       $('#address').html($('#streetAddress').val());
+       $('#cityState').html($('#cityStateZip').val());
+
+
   });
 
   $('#submit').click(function(){

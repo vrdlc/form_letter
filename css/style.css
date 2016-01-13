@@ -1,8 +1,9 @@
 #letter {
   display: none;
 }
-
-
-ul {
-  list-style: none;
+#submitBtn {
+  margin-top: 50px;
+}
+label {
+  float: left;
 }
